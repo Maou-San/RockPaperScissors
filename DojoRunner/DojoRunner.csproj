@@ -51,7 +51,7 @@
     </Reference>
     <Reference Include="SoftwireDojo, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\SoftwireDojo\SoftwireDojo\bin\Debug\SoftwireDojo.dll</HintPath>
+      <HintPath>lib\SoftwireDojo.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
