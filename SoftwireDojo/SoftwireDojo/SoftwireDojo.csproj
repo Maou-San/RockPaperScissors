@@ -36,7 +36,7 @@
       <HintPath>..\lib\Compete.Bot.dll</HintPath>
     </Reference>
     <Reference Include="RockPaperScissorsPro.RPA">
-      <HintPath>lib\RockPaperScissorsPro.RPA.dll</HintPath>
+      <HintPath>..\lib\RockPaperScissorsPro.RPA.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
