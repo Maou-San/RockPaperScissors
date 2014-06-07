@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+# Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SoftwireDojo", "SoftwireDojo\SoftwireDojo.csproj", "{F22D3EFA-2042-4D72-A9D3-33E90B82635D}"
 EndProject
 Global
