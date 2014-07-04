@@ -9,11 +9,16 @@
         private readonly List<Move> opponentMoves = new List<Move>();
         private readonly Random random = new Random();
         private int moveCount;
+        private int m = 1;
         private int opponentDynamiteCount = 100;
         private int myDynamiteCount = 100;
+        private int draws;
 
         public Move MakeMove(IPlayer you, IPlayer opponent, GameRules rules)
         {
+            moveCount++;
+            draws = you.LastMove == opponent.LastMove ? draws + 1 : 0;
+
             if (opponent.LastMove != null)
             {
                 opponentMoves.Add(opponent.LastMove);
@@ -31,12 +36,20 @@
                 }
             }
 
-            if (you.HasDynamite && moveCount % 10 == 0)
+            /*if (draws >= 2)
             {
+                if (you.HasDynamite)
+                {
+                    return Moves.Dynamite;
+                }
+            }*/
+
+            if (you.HasDynamite && moveCount % 10 == m)
+            {
+                //m = (random.Next(1, 100) % 10);
                 myDynamiteCount--;
                 return Moves.Dynamite;
             }
-            moveCount++;
 
             return GetRandomMove();
         }
