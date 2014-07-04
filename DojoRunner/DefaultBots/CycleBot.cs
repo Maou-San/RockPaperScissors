@@ -4,6 +4,7 @@
 
     public class CycleBot : IRockPaperScissorsBot
     {
+
         // Cycle sample implementation
         public Move MakeMove(IPlayer you, IPlayer opponent, GameRules rules)
         {
