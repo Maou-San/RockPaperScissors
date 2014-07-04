@@ -63,6 +63,7 @@
   <ItemGroup>
     <Compile Include="DefaultBots\BigbangBot.cs" />
     <Compile Include="DefaultBots\CycleBot.cs" />
+    <Compile Include="DefaultBots\DanMriBot.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="DefaultBots\RandomBot.cs" />

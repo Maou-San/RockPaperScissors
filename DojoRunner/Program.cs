@@ -1,23 +1,20 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using RockPaperAzure;
-using SoftwireDojo;
-
-namespace DojoRunner
+﻿namespace DojoRunner
 {
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            Player cyclePlayer = new Player("CycleBot", new CycleBot());
-            Player randomPlayer = new Player("RandomBot", new RandomBot());
-            Player bigbangPlayer = new Player("BigbangBot", new BigbangBot());
-            Player mwrPlayer = new Player("MWRBot", new MasterBot());
-            Player shcPlayer = new Player("SHCBot", new MyBot());
+    using RockPaperAzure;
+    using SoftwireDojo;
 
-            Dojo newDojo = new Dojo(cyclePlayer, randomPlayer, bigbangPlayer, mwrPlayer, shcPlayer);
+    internal class Program
+    {
+        private static void Main(string[] args)
+        {
+            var cyclePlayer = new Player("CycleBot", new CycleBot());
+            var randomPlayer = new Player("RandomBot", new RandomBot());
+            var bigbangPlayer = new Player("BigbangBot", new BigbangBot());
+            var mwrPlayer = new Player("MWRBot", new MasterBot());
+            var shcPlayer = new Player("SHCBot", new MyBot());
+            var domPlayer = new Player("DomriBot", new DanMriBot());
+
+            var newDojo = new Dojo(cyclePlayer, randomPlayer, bigbangPlayer, mwrPlayer, shcPlayer, domPlayer);
             newDojo.Run();
         }
     }
