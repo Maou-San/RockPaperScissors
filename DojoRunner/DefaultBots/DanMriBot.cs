@@ -36,13 +36,13 @@
                 }
             }
 
-            /*if (draws >= 2)
+            if (draws >= 2)
             {
                 if (you.HasDynamite)
                 {
                     return Moves.Dynamite;
                 }
-            }*/
+            }
 
             if (you.HasDynamite && moveCount % 10 == m)
             {
